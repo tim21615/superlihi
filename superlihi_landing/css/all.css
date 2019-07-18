@@ -1,0 +1,63 @@
+@charset "UTF-8";
+html, body {
+  width: 100%;
+}
+
+* {
+  border: solid 1px black;
+  font-family: 微軟正黑體;
+  position: relative;
+  text-align: center;
+}
+
+nav.navbar > a.navbar-brand {
+  margin-left: 2rem;
+}
+nav.navbar > .nav-item {
+  margin-right: 2rem;
+}
+nav.navbar > .nav-item > a.nav-link {
+  border-radius: 15px;
+  color: #fff;
+  background-image: linear-gradient(to right, #E39C82, #EA6385);
+}
+
+section#section_problem {
+  background-color: #F4F5F7;
+}
+section#section_problem .container > .row .col-12.col-md-3 .imgDiv {
+  background-color: #fff;
+  border-radius: 100%;
+  max-width: 205px;
+  max-height: 205px;
+  margin: auto;
+}
+section#section_problem .container > .row .col-12.col-md-3 .imgDiv img {
+  width: 100%;
+  width: 100%;
+}
+
+section#section_feature {
+  background-image: linear-gradient(to right, #E39F82, #E9587C);
+}
+section#section_feature .col-5 {
+  position: relative;
+}
+section#section_feature .col-5 > img.cellphoneImg {
+  position: absolute;
+  left: 0;
+  width: 28vw;
+}
+section#section_feature .col-7 > .row .feature_imgDiv {
+  margin-left: auto;
+  margin-right: auto;
+  width: 110px;
+}
+section#section_feature .col-7 > .row .feature_imgDiv img {
+  width: 100%;
+}
+section#section_feature .col-7 > .row .feature_imgDiv .imgText {
+  color: white;
+}
+
+/*# sourceMappingURL=all.css.map */

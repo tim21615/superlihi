@@ -25,14 +25,14 @@ nav.navbar > .nav-item > a.nav-link {
 section#section_problem {
   background-color: #F4F5F7;
 }
-section#section_problem .container > .row .col-12.col-md-3 .imgDiv {
+section#section_problem .container > .row .col-6.col-md-3 .imgDiv {
   background-color: #fff;
   border-radius: 100%;
   max-width: 205px;
   max-height: 205px;
   margin: auto;
 }
-section#section_problem .container > .row .col-12.col-md-3 .imgDiv img {
+section#section_problem .container > .row .col-6.col-md-3 .imgDiv img {
   width: 100%;
   width: 100%;
 }

@@ -10,5 +10,8 @@ section#section_feature .featureDiv {
   order: 1;
   width: 100%;
 }
+section#section_feature .featureDiv .feature_line .feature img {
+  width: 53%;
+}
 
 /*# sourceMappingURL=mobile.css.map */

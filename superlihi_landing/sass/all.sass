@@ -1,3 +1,28 @@
+$fz_imgText: 1.4rem
+$fz_title: 18px
+$fz_innerText: 12px
+$fz_bigInnerText: 13px
+
+html 
+    font-size: 100% !important
+
+
+@media only screen and (max-width: 1200px)
+    html 
+        font-size: 85% !important
+    
+
+@media only screen and (max-width: 992px)
+    html 
+        font-size: 71% !important
+    
+@media only screen and (max-width: 768px)
+    html 
+        font-size: 57% !important
+    
+
+
+    
 html,body
     width: 100%
     padding: 0
@@ -91,18 +116,18 @@ section#section_feature
     flex-direction: row
     flex-wrap: wrap
     .imgDiv#cellphonePic
-        width: 33%
+        width: 35%
         img.cellphoneImg 
             width: 85%
             position: absolute
             right: 0
     .featureDiv
-        width: 66%
+        width: 64%
         .featureTitle
             padding-top: 30px
             padding-bottom: 30px
             img
-                width: 35%
+                width: 25%
                 
  
         .feature_line
@@ -112,7 +137,13 @@ section#section_feature
             .feature
                 width: 26%
                 img 
-                    width: 70%
+                    width: 50%
+                .imgText
+                    color: white
+                    font-size: $fz_imgText
+                    letter-spacing: 0.2rem
+                    
+                    
 
 
 

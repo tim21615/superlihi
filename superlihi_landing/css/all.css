@@ -1,4 +1,23 @@
 @charset "UTF-8";
+html {
+  font-size: 100% !important;
+}
+
+@media only screen and (max-width: 1200px) {
+  html {
+    font-size: 85% !important;
+  }
+}
+@media only screen and (max-width: 992px) {
+  html {
+    font-size: 71% !important;
+  }
+}
+@media only screen and (max-width: 768px) {
+  html {
+    font-size: 57% !important;
+  }
+}
 html, body {
   width: 100%;
   padding: 0;
@@ -52,7 +71,7 @@ section#section_feature {
   flex-wrap: wrap;
 }
 section#section_feature .imgDiv#cellphonePic {
-  width: 33%;
+  width: 35%;
 }
 section#section_feature .imgDiv#cellphonePic img.cellphoneImg {
   width: 85%;
@@ -60,14 +79,14 @@ section#section_feature .imgDiv#cellphonePic img.cellphoneImg {
   right: 0;
 }
 section#section_feature .featureDiv {
-  width: 66%;
+  width: 64%;
 }
 section#section_feature .featureDiv .featureTitle {
   padding-top: 30px;
   padding-bottom: 30px;
 }
 section#section_feature .featureDiv .featureTitle img {
-  width: 35%;
+  width: 25%;
 }
 section#section_feature .featureDiv .feature_line {
   display: flex;
@@ -78,7 +97,12 @@ section#section_feature .featureDiv .feature_line .feature {
   width: 26%;
 }
 section#section_feature .featureDiv .feature_line .feature img {
-  width: 70%;
+  width: 50%;
+}
+section#section_feature .featureDiv .feature_line .feature .imgText {
+  color: white;
+  font-size: 1.4rem;
+  letter-spacing: 0.2rem;
 }
 
 /*# sourceMappingURL=all.css.map */

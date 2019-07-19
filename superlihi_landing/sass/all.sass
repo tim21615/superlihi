@@ -3,14 +3,13 @@ $fz_title: 18px
 $fz_innerText: 12px
 $fz_bigInnerText: 13px
 
+// 字體自適應
 html 
     font-size: 100% !important
-
 
 @media only screen and (max-width: 1200px)
     html 
         font-size: 90% !important
-    
 
 @media only screen and (max-width: 992px)
     html 
@@ -118,9 +117,11 @@ section#section_feature
     .imgDiv#cellphonePic
         width: 35%
         img.cellphoneImg 
-            width: 85%
+            // width: 85%
+            height: 147%
             position: absolute
             right: 0
+            bottom: -220px
     .featureDiv
         width: 64%
         .featureTitle
@@ -128,20 +129,29 @@ section#section_feature
             padding-bottom: 30px
             img
                 width: 25%
+                min-width: 120px
                 
- 
+        .feature_line#firstLine
+            padding-top: 20px
+            padding-bottom: 20px
+        .feature_line#secondLine
+            padding-bottom: 50px
         .feature_line
             display: flex
             flex-wrap: wrap
             justify-content: center
             .feature
-                width: 26%
+                // width: 26%
+                width: 20%
+                // margin-top: 50px
+                
                 img 
-                    width: 50%
+                    // width: 53%
+                    width: 68%
                 .imgText
                     color: white
                     font-size: $fz_imgText
-                    letter-spacing: 0.2rem
+                    letter-spacing: 0.3rem
                     
                     
 

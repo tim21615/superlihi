@@ -74,9 +74,10 @@ section#section_feature .imgDiv#cellphonePic {
   width: 35%;
 }
 section#section_feature .imgDiv#cellphonePic img.cellphoneImg {
-  width: 85%;
+  height: 147%;
   position: absolute;
   right: 0;
+  bottom: -220px;
 }
 section#section_feature .featureDiv {
   width: 64%;
@@ -87,6 +88,14 @@ section#section_feature .featureDiv .featureTitle {
 }
 section#section_feature .featureDiv .featureTitle img {
   width: 25%;
+  min-width: 120px;
+}
+section#section_feature .featureDiv .feature_line#firstLine {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+section#section_feature .featureDiv .feature_line#secondLine {
+  padding-bottom: 50px;
 }
 section#section_feature .featureDiv .feature_line {
   display: flex;
@@ -94,15 +103,15 @@ section#section_feature .featureDiv .feature_line {
   justify-content: center;
 }
 section#section_feature .featureDiv .feature_line .feature {
-  width: 26%;
+  width: 20%;
 }
 section#section_feature .featureDiv .feature_line .feature img {
-  width: 50%;
+  width: 68%;
 }
 section#section_feature .featureDiv .feature_line .feature .imgText {
   color: white;
   font-size: 1.4rem;
-  letter-spacing: 0.2rem;
+  letter-spacing: 0.3rem;
 }
 
 /*# sourceMappingURL=all.css.map */

@@ -9,6 +9,8 @@ html(lang="en")
         script(src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.js")
 
         link(rel="stylesheet", href="css/all.css")
+        link(rel="stylesheet", media="screen and (max-width: 991.9px)", href="css/tablet.css")
+        link(rel="stylesheet", media="screen and (max-width: 768px)", href="css/screen_xs.css")
         link(rel="stylesheet", media="screen and (max-width: 415px) and (max-height: 1281px)", href="css/mobile.css")
     body
         #nav_head
@@ -76,14 +78,14 @@ html(lang="en")
             .featureDiv
                 .featureTitle
                     img(src='img/feature_heading.png')
-                .feature_line
+                .feature_line#firstLine
                     .feature.feature1
                         img(src='img/feature1.png')
                         .imgText 自訂網域
                     .feature.feature2
                         img(src='img/feature2.png')
                         .imgText 自動分流
-                .feature_line 
+                .feature_line#secondLine
                     .feature.feature3 
                         img(src='img/feature3.png')
                         .imgText 埋追蹤碼

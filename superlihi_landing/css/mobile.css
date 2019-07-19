@@ -5,13 +5,24 @@ section#section_feature .imgDiv#cellphonePic {
 section#section_feature .imgDiv#cellphonePic img.cellphoneImg {
   position: relative;
   margin: auto;
+  bottom: initial;
+  right: initial;
 }
 section#section_feature .featureDiv {
   order: 1;
   width: 100%;
 }
+section#section_feature .featureDiv .featureTitle img {
+  width: 40%;
+}
+section#section_feature .featureDiv .feature_line .feature {
+  width: 43%;
+}
 section#section_feature .featureDiv .feature_line .feature img {
   width: 60%;
+}
+section#section_feature .featureDiv .feature_line .feature .imgText {
+  font-size: 1.9rem;
 }
 
 /*# sourceMappingURL=mobile.css.map */

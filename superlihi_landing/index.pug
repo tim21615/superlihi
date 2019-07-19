@@ -9,13 +9,18 @@ html(lang="en")
         script(src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.js")
 
         link(rel="stylesheet", href="css/all.css")
+        link(rel="stylesheet", media="screen and (max-width: 415px) and (max-height: 1281px)", href="css/mobile.css")
     body
-        nav.navbar
-            a.navbar-brand(href='#') 
-                img(src='img/logo.png')
+        #nav_head
 
-            .nav-item
-                a.nav-link(href='#') 登入
+            .wrapper
+                a.navbar-brand(href="#header" )
+                    img(src="img/Logo.png")
+
+                nav.navigation
+                    ul
+                        li
+                            a.nav-link(href='#header') 登入
 
         header#header
             .container
@@ -46,19 +51,19 @@ html(lang="en")
                     p.problem2 找KOL代言導流難以評估量化、業績不知從哪來
                     p.problem3 a/b測試時間太長，頁面成效不知如何評估才合理
                 .row
-                    .col-6.col-md-3
+                    .col-4.col-md-3
                         .imgDiv
                             img(src="img/problem1.png", alt="")
                         .imgText 困惑
-                    .col-6.col-md-3
+                    .col-4.col-md-3
                         .imgDiv
                             img(src="img/problem2.png", alt="")
                         .imgText 假設錯誤
-                    .col-6.col-md-3
+                    .col-4.col-md-3
                         .imgDiv
                             img(src="img/problem3.png", alt="")
                         .imgText 繼續嘗試
-                    .col-6.col-md-3
+                    .col-12.col-md-3
                         .imgDiv
                             img(src="img/problem4.png", alt="")
                         .imgText 還是失敗
@@ -66,37 +71,62 @@ html(lang="en")
             
 
         section#section_feature
+            .imgDiv#cellphonePic
+                img.cellphoneImg(src='img/cellphone.png')
+            .featureDiv
+                .featureTitle
+                    img(src='img/feature_heading.png')
+                .feature_line
+                    .feature.feature1
+                        img(src='img/feature1.png')
+                        .imgText 自訂網域
+                    .feature.feature2
+                        img(src='img/feature2.png')
+                        .imgText 自動分流
+                .feature_line 
+                    .feature.feature3 
+                        img(src='img/feature3.png')
+                        .imgText 埋追蹤碼
+                    .feature.feature4 
+                        img(src='img/feature4.png')
+                        .imgText 連結替換
+                    .feature.feature5 
+                        img(src='img/feature5.png')
+                        .imgText 自訂參數                 
+
+
+
             
-            .container-fluid
-                .row
-                    .col-5
-                        img.cellphoneImg(src='img/cellphone.png')
-                    .col-7
-                        .feature_heading 
-                            img(src='img/feature_heading.png')
-                        .row
-                            .col-md-6
-                                .feature_imgDiv
-                                    img.img-fluid(src="img/feature1.png", alt="")
-                                    .imgText 自訂網域
-                            .col-md-6
-                                .feature_imgDiv
-                                    img.img-fluid(src="img/feature2.png", alt="")
-                                    .imgText 自動分流
+            //- .container-fluid
+            //-     .row
+            //-         .col-5
+            //-             img.cellphoneImg(src='img/cellphone.png')
+            //-         .col-7
+            //-             .feature_heading 
+            //-                 img(src='img/feature_heading.png')
+            //-             .row
+            //-                 .col-md-6
+            //-                     .feature_imgDiv
+            //-                         img.img-fluid(src="img/feature1.png", alt="")
+            //-                         .imgText 自訂網域
+            //-                 .col-md-6
+            //-                     .feature_imgDiv
+            //-                         img.img-fluid(src="img/feature2.png", alt="")
+            //-                         .imgText 自動分流
 
-                            .col-md-4
-                                .feature_imgDiv
-                                    img.img-fluid(src="img/feature3.png", alt="")
-                                    .imgText 埋追蹤碼
+            //-                 .col-md-4
+            //-                     .feature_imgDiv
+            //-                         img.img-fluid(src="img/feature3.png", alt="")
+            //-                         .imgText 埋追蹤碼
 
-                            .col-md-4
-                                .feature_imgDiv
-                                    img.img-fluid(src="img/feature4.png", alt="")
-                                    .imgText 連結替換
-                            .col-md-4
-                                .feature_imgDiv
-                                    img.img-fluid(src="img/feature5.png", alt="")
-                                    .imgText 自訂參數
+            //-                 .col-md-4
+            //-                     .feature_imgDiv
+            //-                         img.img-fluid(src="img/feature4.png", alt="")
+            //-                         .imgText 連結替換
+            //-                 .col-md-4
+            //-                     .feature_imgDiv
+            //-                         img.img-fluid(src="img/feature5.png", alt="")
+            //-                         .imgText 自訂參數
 
                         //- .wrapper_feature
                         //-     .feature_imgDiv

@@ -1,0 +1,14 @@
+section#section_feature .imgDiv#cellphonePic {
+  order: 2;
+  width: 100%;
+}
+section#section_feature .imgDiv#cellphonePic img.cellphoneImg {
+  position: relative;
+  margin: auto;
+}
+section#section_feature .featureDiv {
+  order: 1;
+  width: 100%;
+}
+
+/*# sourceMappingURL=mobile.css.map */

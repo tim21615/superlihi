@@ -1,31 +1,50 @@
 html,body
     width: 100%
+    padding: 0
+    margin: 0
+    overflow-x: hidden
 
 *
-    // border: solid 1px black
+    border: solid 1px black
     font-family: 微軟正黑體
     position: relative
     text-align: center
 
-nav.navbar 
-    >a.navbar-brand
-        margin-left: 2rem
-    >.nav-item
-        margin-right: 2rem
-        >a.nav-link
-            border-radius: 15px
-            color: #fff
-            background-image: linear-gradient(to right, #E39C82, #EA6385)
+#nav_head
+
+    >.wrapper
+        display: flex
+        flex-direction: row
+        justify-content: space-between
+        align-items: center
+        a.navbar-brand
+            // margin-left: 2rem
+        nav.navigation
+            // display: flex
+            // align-items: center
+            ul 
+                margin: 0
+                // height: 100%
+                li
+                    list-style: none
+                    a.nav-link
+                        border-radius: 15px
+                        color: #fff
+                        background-image: linear-gradient(to right, #E39C82, #EA6385)
 
 header#header
 //     padding-top: 200px 
     // text-align: center
+    // .heading1,.heading2
+    //     max-width: 100%
+    //     img.img-fluid
+    //         max-width: 98%
 
 section#section_problem
     background-color: #F4F5F7
 
     .container>.row
-        .col-6.col-md-3
+        .col-4.col-md-3,.col-12.col-md-3
             // margin: auto
             .imgDiv
                 background-color: #fff
@@ -37,27 +56,27 @@ section#section_problem
                 img 
                     width: 100%
                     // margin: 0
-                    width: 100%
+                    
 
-section#section_feature
-    background-image: linear-gradient(to right, #E39F82, #E9587C)
-    .col-5
-        position: relative
-        >img.cellphoneImg
-            position: absolute
-            left: 0
-            width: 28vw
-    .col-7
-        // right: 15px
-        >.row
-            .feature_imgDiv
-                margin-left: auto
-                margin-right: auto
-                width: 110px
-                img 
-                    width: 100%
-                .imgText
-                    color: white
+// section#section_feature
+//     background-image: linear-gradient(to right, #E39F82, #E9587C)
+    // .col-5
+    //     position: relative
+    //     >img.cellphoneImg
+    //         position: absolute
+    //         left: 0
+    //         width: 28vw
+    // .col-7
+    //     // right: 15px
+    //     >.row
+    //         .feature_imgDiv
+    //             margin-left: auto
+    //             margin-right: auto
+    //             width: 110px
+    //             img 
+    //                 width: 100%
+    //             .imgText
+    //                 color: white
             
 
 
@@ -65,5 +84,35 @@ section#section_feature
         //     display: flex
         //     flex-direction: row
         //     justify-content: center
+
+section#section_feature
+    background-image: linear-gradient(to right, #E39F82, #E9587C)
+    display: flex
+    flex-direction: row
+    flex-wrap: wrap
+    .imgDiv#cellphonePic
+        width: 33%
+        img.cellphoneImg 
+            width: 85%
+            position: absolute
+            right: 0
+    .featureDiv
+        width: 66%
+        .featureTitle
+            padding-top: 30px
+            padding-bottom: 30px
+            img
+                width: 35%
+                
+ 
+        .feature_line
+            display: flex
+            flex-wrap: wrap
+            justify-content: center
+            .feature
+                width: 26%
+                img 
+                    width: 70%
+
 
 

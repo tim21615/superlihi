@@ -7,6 +7,9 @@ span.bold {
   font-weight: bold;
 }
 
+span.highlight {
+  display: inline;
+}
 span.highlight:before {
   content: "";
   position: absolute;
@@ -54,11 +57,17 @@ html, body {
   text-align: center;
 }
 
+a:hover:not(.navbar-brand) {
+  top: 0.7px;
+  left: 0.7px;
+}
+
 #nav_head > .wrapper {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  padding: 8px 26px;
 }
 #nav_head > .wrapper nav.navigation ul {
   margin: 0;
@@ -253,6 +262,7 @@ section#section_performance {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  padding-left: 60px;
 }
 section#section_performance img.img_wave_top {
   position: absolute;
@@ -302,18 +312,20 @@ section#section_performance .performanceDiv1 p {
   margin-bottom: 23px;
 }
 section#section_performance .performanceDiv2 {
-  width: 31%;
+  width: 32%;
   text-align: left;
 }
 section#section_performance .performanceDiv2 .subtitle {
   text-align: left;
-  padding: 10px;
+  padding-bottom: 10px;
+  padding-top: 10px;
   font-size: 2.3rem;
 }
 section#section_performance .performanceDiv2 img {
   width: 70%;
   margin-left: auto;
   margin-right: 0;
+  left: -25px;
 }
 section#section_performance .performanceDiv2 p {
   text-align: left;

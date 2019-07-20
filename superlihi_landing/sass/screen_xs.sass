@@ -19,7 +19,6 @@ header#header
                 font-size: $fz_innerText
 
     
-    
 section#section_feature
     .imgDiv#cellphonePic
         img.cellphoneImg
@@ -29,3 +28,18 @@ section#section_feature
         .feature_line
             .feature
                 width: 32%
+section#section_performance   
+    .performanceDiv1
+        p
+            font-size: $fz_innerText
+    .performanceDiv2
+        p 
+            font-size: $fz_innerText
+    .performanceDiv3
+        .p_bigText
+            font-size: $fz_bigInnerText
+
+@media only screen and (max-width: 681px)
+    section#section_feature .imgDiv#cellphonePic img.cellphoneImg
+        right: -17px
+

@@ -1,10 +1,18 @@
 @charset "UTF-8";
-span.highlight .highlight_bg {
-  display: inline-block;
+.subtitle {
+  font-weight: bold;
+}
+
+span.bold {
+  font-weight: bold;
+}
+
+span.highlight:before {
+  content: "";
   position: absolute;
   width: 100%;
-  height: 65%;
-  bottom: 0;
+  height: 45%;
+  bottom: 4px;
   background-image: linear-gradient(to right, #F5DDD2, #F8C9D5);
   z-index: -1;
 }
@@ -260,43 +268,71 @@ section#section_performance img.img_wave_left {
   z-index: -1;
 }
 section#section_performance .performanceDiv1 {
-  width: 80vw;
+  width: 75%;
   text-align: left;
+  margin-bottom: 15px;
 }
 section#section_performance .performanceDiv1 .title {
   font-size: 3.4rem;
   text-align: left;
   font-weight: bold;
+  display: inline-block;
 }
-section#section_performance .performanceDiv1 .title span {
+section#section_performance .performanceDiv1 .title > img#magnifier_img {
+  position: absolute;
+  height: 16rem;
+  left: 115%;
+  bottom: calc(100% - 3.5rem);
+}
+section#section_performance .performanceDiv1 .title > img#imgTarget {
+  height: 90%;
+  width: auto;
+}
+section#section_performance .performanceDiv1 .title > span {
   margin-left: 12px;
   padding: 0;
   margin-bottom: 0;
 }
 section#section_performance .performanceDiv1 p {
+  margin-top: 12px;
   text-align: left;
   letter-spacing: 5px;
+  font-size: 1.2rem;
+  line-height: 35px;
+  margin-bottom: 23px;
 }
 section#section_performance .performanceDiv2 {
-  width: 36vw;
+  width: 31%;
   text-align: left;
 }
 section#section_performance .performanceDiv2 .subtitle {
   text-align: left;
+  padding: 10px;
   font-size: 2.3rem;
 }
 section#section_performance .performanceDiv2 img {
   width: 70%;
-  margin-left: 0;
+  margin-left: auto;
+  margin-right: 0;
 }
 section#section_performance .performanceDiv2 p {
   text-align: left;
+  font-size: 1.2rem;
+  width: 70%;
+  line-height: 2.2rem;
+  letter-spacing: 3px;
+  margin-top: 10px;
 }
 section#section_performance .performanceDiv3 {
-  width: 44vw;
+  width: 43%;
+  text-align: right;
 }
 section#section_performance .performanceDiv3 .p_bigText {
   text-align: left;
+  font-size: 1.65rem;
+  letter-spacing: 3px;
+  margin-top: 25px;
+  margin-bottom: 30px;
 }
 section#section_performance .performanceDiv3 .subtitle {
   text-align: right;
@@ -304,6 +340,7 @@ section#section_performance .performanceDiv3 .subtitle {
 }
 section#section_performance .performanceDiv3 img {
   width: 90%;
+  margin-top: 15px;
 }
 
 /*# sourceMappingURL=all.css.map */

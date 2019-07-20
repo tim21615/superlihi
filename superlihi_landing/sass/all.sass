@@ -5,15 +5,18 @@ $fz_title: 3.4rem
 $fz_innerText: 1.2rem
 $fz_bigInnerText: 1.65rem
 
-
+.subtitle
+    font-weight: bold
+span.bold 
+    font-weight: bold
 
 span.highlight
-    .highlight_bg
-        display: inline-block
+    &:before
+        content: ''
         position: absolute
         width: 100%
-        height: 65%
-        bottom: 0
+        height: 45%
+        bottom: 4px
         background-image: linear-gradient(to right, #F5DDD2, #F8C9D5)
         z-index: -1
 
@@ -295,42 +298,71 @@ section#section_performance
         z-index: -1
             
     .performanceDiv1
-        width: 80vw
+        width: 75%
         text-align: left
+        margin-bottom: 15px
+        
         .title
             font-size: $fz_title
             text-align: left
             font-weight: bold
-            img
-            span
+            display: inline-block
+            >img#magnifier_img
+                position: absolute
+                height: 16rem
+                left: 115%
+                bottom: calc(100% - 3.5rem) 
+            >img#imgTarget
+                height: 90%
+                width: auto
+            >span
                 margin-left: 12px
                 padding: 0
                 margin-bottom: 0
+                // display: inline
         p
+            margin-top: 12px
             text-align: left
             letter-spacing: 5px
+            font-size: $fz_innerText
+            line-height: 35px
+            margin-bottom: 23px
 
     .performanceDiv2
-        width: 36vw
+        width: 31%
         text-align: left
         .subtitle 
             text-align: left
+            padding: 10px
             font-size: $fz_subtitle
+            
         img
             width: 70%
-            margin-left: 0
+            margin-left: auto
+            margin-right: 0
         p 
             text-align: left
+            font-size: $fz_innerText
+            width: 70%
+            line-height: 2.2rem
+            letter-spacing: 3px
+            margin-top: 10px
 
     .performanceDiv3
-        width: 44vw
+        width: 43%
+        text-align: right
         .p_bigText
             text-align: left
+            font-size: $fz_bigInnerText
+            letter-spacing: 3px
+            margin-top: 25px
+            margin-bottom: 30px
         .subtitle
             text-align: right
             font-size: $fz_subtitle
         img
             width: 90%
+            margin-top: 15px
 
             
             

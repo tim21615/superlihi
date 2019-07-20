@@ -1,8 +1,28 @@
+header#header .container .headingTitle {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+header#header .container .headingTitle .heading3 {
+  font-size: 16px;
+}
+header#header .container .headingTitle .heading4 {
+  font-size: 14px;
+}
 header#header .container a.tryOutBtn {
   top: 8px;
 }
 header#header .container a.tryOutBtn:hover {
   top: 11px;
+}
+
+section#section_problem .container .problem_heading2 {
+  font-size: 20px;
+}
+section#section_problem .container ul.problems li {
+  font-size: 14px;
+}
+section#section_problem .container .row .col-4.col-md-3 .condition .imgText, section#section_problem .container .row .row .col-4.col-md-3 .condition .imgText {
+  font-size: 14px;
 }
 
 section#section_feature .imgDiv#cellphonePic {

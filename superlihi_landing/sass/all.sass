@@ -1,7 +1,24 @@
 $fz_imgText: 1.4rem
-$fz_title: 18px
-$fz_innerText: 12px
-$fz_bigInnerText: 13px
+$fz_subtitle: 2.3rem
+$fz_title: 3.4rem
+// $fz_title: 18px
+$fz_innerText: 1.2rem
+$fz_bigInnerText: 1.65rem
+
+
+
+span.highlight
+    .highlight_bg
+        display: inline-block
+        position: absolute
+        width: 100%
+        height: 65%
+        bottom: 0
+        background-image: linear-gradient(to right, #F5DDD2, #F8C9D5)
+        z-index: -1
+
+
+    
 
 // 字體自適應
 html 
@@ -13,14 +30,14 @@ html
 
 @media only screen and (max-width: 992px)
     html 
-        font-size: 80% !important
+        font-size: 81% !important
     
 @media only screen and (max-width: 768px)
     html 
-        font-size: 70% !important
+        font-size: 72% !important
     
 // 修正feature5圖片間距
-@media only screen and (max-width: 681px)
+@media only screen and (max-width: 663.5px)
     .feature5
         margin-top: 20px !important
 
@@ -32,7 +49,7 @@ html,body
     overflow-x: hidden
 
 *
-    border: solid 1px black
+    // border: solid 1px black
     font-family: 微軟正黑體
     position: relative
     text-align: center
@@ -60,33 +77,128 @@ html,body
                         background-image: linear-gradient(to right, #E39C82, #EA6385)
 
 header#header
-//     padding-top: 200px 
-    // text-align: center
-    // .heading1,.heading2
-    //     max-width: 100%
-    //     img.img-fluid
-    //         max-width: 98%
+    // background-color: #fefefe
+    
+    .container
+        .headingTitle
+            margin-top: 10px
+            margin-bottom: 20px
+            .heading1
+                padding: 1.47rem
+                // min-width: 470px
+                img.img-fluid
+                    width: 77%
+                    
+            .heading2
+                padding: 0.31rem
+                img.img-fluid
+                    width: 42%
+                    // padding: 20px
+            .heading3 
+                font-size: $fz_bigInnerText
+                letter-spacing: 6px
+                font-weight: bold
+
+                margin-top: 2.18rem
+                // margin-top: 35px
+            .heading4 
+                margin-top: 5px
+                font-size: $fz_innerText
+                letter-spacing: 2.5px
+        a.tryOutBtn
+            border-radius: 6px
+            background-image: linear-gradient(to right, #E3A281, #E9547B)
+            // padding: 5px 9px
+            color: white
+            font-size: 1.5rem
+            // font-weight: bold
+            padding: 0.4rem 1.8rem
+            top: 20px
+            letter-spacing: 2px
+            text-decoration: none
+            box-shadow: 5px 5px 5px -3px rgba(0,0,0,0.5)
+            z-index: 12
+            &:hover
+                top: 23px
+                left: 3px
+                box-shadow: 2px 2px 5px -1px rgba(0,0,0,0.2)
+        img 
+            top: 10px
+            z-index: 8
+            // margin-bottom: -50px
 
 section#section_problem
     background-color: #F4F5F7
+    padding: 30px
+    box-shadow: 0px 0.5px 12px 3px rgba(black,0.35)
+    // box-shadow: 0px 0px 15px -15px rgba(0,0,0,0.4)
+    z-index: 6
+    .container
+        .problem_heading1
+            padding: 20px
+            >.imgDiv
+                width: 21%
+                min-width: 160px
+                margin: auto
+                &:after
+                    content: ''
+                    position: absolute
+                    width: 68%
+                    height: 2.5px
+                    background-color: #000
+                    top: 134%
+                    left: 50%
+                    transform: translateX(-50%)
+                img.img-fluid
+                    width: 100%
+                    display: inline-block
+                    
+        .problem_heading2
+            font-size: $fz_subtitle
+            font-weight: bold
+            letter-spacing: 0.4rem
+            padding: 15px
+        ul.problems
+            padding: 0
+            li 
+                margin: 6px
+                list-style: none
+                letter-spacing: 3px
+                font-size: $fz_innerText
 
     .container>.row
         .col-4.col-md-3,.col-12.col-md-3
             // margin: auto
-            .imgDiv
-                background-color: #fff
-                border-radius: 100%
-                max-width: 205px
-                max-height: 205px
-                margin: auto
-                // padding: 0
-                img 
-                    width: 100%
-                    // margin: 0
+            .condition
+                display: inline-block
+                .imgDiv
+                    background-color: #fff
+                    border-radius: 100%
+                    max-width: 205px
+                    max-height: 205px
+                    margin: auto
+                    margin-top: 25px
+                    margin-bottom: 25px
+                    // padding: 0
+                    img 
+                        width: 100%
+                        
+                        // margin: 0
+                .imgText
+                    font-size: $fz_imgText
+                    background-color: black
+                    border-radius: 8px
+                    color: white
+                    font-weight: 600
+                    margin: auto
+                    // margin-right: 5px
+                    // margin-left: 5px
+                    letter-spacing: 2.3px
+                    padding: 1.6px
                     
 
 // section#section_feature
-//     background-image: linear-gradient(to right, #E39F82, #E9587C)
+//     
     // .col-5
     //     position: relative
     //     >img.cellphoneImg
@@ -119,6 +231,7 @@ section#section_feature
     flex-wrap: wrap
     .imgDiv#cellphonePic
         width: 35%
+        z-index: 5
         img.cellphoneImg 
             // width: 85%
             height: 140%
@@ -162,10 +275,65 @@ section#section_feature
     section#section_feature .imgDiv#cellphonePic img.cellphoneImg
         right: -17px
 
+
 section#section_performance
-    height: 300px
-                    
-                    
+    // height: 300px
+    padding-top: 15rem
+    display: flex
+    flex-wrap: wrap
+    justify-content: center
+    img.img_wave_top 
+        position: absolute
+        left: -10px
+        top: -5px
+        z-index: -1
+        height: 11rem
+    img.img_wave_left 
+        position: absolute
+        left: 0
+        bottom: 0
+        z-index: -1
+            
+    .performanceDiv1
+        width: 80vw
+        text-align: left
+        .title
+            font-size: $fz_title
+            text-align: left
+            font-weight: bold
+            img
+            span
+                margin-left: 12px
+                padding: 0
+                margin-bottom: 0
+        p
+            text-align: left
+            letter-spacing: 5px
+
+    .performanceDiv2
+        width: 36vw
+        text-align: left
+        .subtitle 
+            text-align: left
+            font-size: $fz_subtitle
+        img
+            width: 70%
+            margin-left: 0
+        p 
+            text-align: left
+
+    .performanceDiv3
+        width: 44vw
+        .p_bigText
+            text-align: left
+        .subtitle
+            text-align: right
+            font-size: $fz_subtitle
+        img
+            width: 90%
+
+            
+            
 
 
 

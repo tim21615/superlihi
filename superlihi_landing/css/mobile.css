@@ -1,6 +1,15 @@
+header#header .container a.tryOutBtn {
+  top: 8px;
+}
+header#header .container a.tryOutBtn:hover {
+  top: 11px;
+}
+
 section#section_feature .imgDiv#cellphonePic {
   order: 2;
-  width: 100%;
+  width: 90%;
+  margin-top: -130px;
+  top: 100px;
 }
 section#section_feature .imgDiv#cellphonePic img.cellphoneImg {
   position: relative;
@@ -23,6 +32,11 @@ section#section_feature .featureDiv .feature_line .feature img {
 }
 section#section_feature .featureDiv .feature_line .feature .imgText {
   font-size: 1.65rem;
+}
+
+section#section_performance {
+  padding-left: 20px;
+  padding-top: 125px;
 }
 
 /*# sourceMappingURL=mobile.css.map */

@@ -1,4 +1,14 @@
 @charset "UTF-8";
+span.highlight .highlight_bg {
+  display: inline-block;
+  position: absolute;
+  width: 100%;
+  height: 65%;
+  bottom: 0;
+  background-image: linear-gradient(to right, #F5DDD2, #F8C9D5);
+  z-index: -1;
+}
+
 html {
   font-size: 100% !important;
 }
@@ -10,15 +20,15 @@ html {
 }
 @media only screen and (max-width: 992px) {
   html {
-    font-size: 80% !important;
+    font-size: 81% !important;
   }
 }
 @media only screen and (max-width: 768px) {
   html {
-    font-size: 70% !important;
+    font-size: 72% !important;
   }
 }
-@media only screen and (max-width: 681px) {
+@media only screen and (max-width: 663.5px) {
   .feature5 {
     margin-top: 20px !important;
   }
@@ -31,7 +41,6 @@ html, body {
 }
 
 * {
-  border: solid 1px black;
   font-family: 微軟正黑體;
   position: relative;
   text-align: center;
@@ -55,18 +64,122 @@ html, body {
   background-image: linear-gradient(to right, #E39C82, #EA6385);
 }
 
+header#header .container .headingTitle {
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+header#header .container .headingTitle .heading1 {
+  padding: 1.47rem;
+}
+header#header .container .headingTitle .heading1 img.img-fluid {
+  width: 77%;
+}
+header#header .container .headingTitle .heading2 {
+  padding: 0.31rem;
+}
+header#header .container .headingTitle .heading2 img.img-fluid {
+  width: 42%;
+}
+header#header .container .headingTitle .heading3 {
+  font-size: 1.65rem;
+  letter-spacing: 6px;
+  font-weight: bold;
+  margin-top: 2.18rem;
+}
+header#header .container .headingTitle .heading4 {
+  margin-top: 5px;
+  font-size: 1.2rem;
+  letter-spacing: 2.5px;
+}
+header#header .container a.tryOutBtn {
+  border-radius: 6px;
+  background-image: linear-gradient(to right, #E3A281, #E9547B);
+  color: white;
+  font-size: 1.5rem;
+  padding: 0.4rem 1.8rem;
+  top: 20px;
+  letter-spacing: 2px;
+  text-decoration: none;
+  box-shadow: 5px 5px 5px -3px rgba(0, 0, 0, 0.5);
+  z-index: 12;
+}
+header#header .container a.tryOutBtn:hover {
+  top: 23px;
+  left: 3px;
+  box-shadow: 2px 2px 5px -1px rgba(0, 0, 0, 0.2);
+}
+header#header .container img {
+  top: 10px;
+  z-index: 8;
+}
+
 section#section_problem {
   background-color: #F4F5F7;
+  padding: 30px;
+  box-shadow: 0px 0.5px 12px 3px rgba(0, 0, 0, 0.35);
+  z-index: 6;
 }
-section#section_problem .container > .row .col-4.col-md-3 .imgDiv, section#section_problem .container > .row .col-12.col-md-3 .imgDiv {
+section#section_problem .container .problem_heading1 {
+  padding: 20px;
+}
+section#section_problem .container .problem_heading1 > .imgDiv {
+  width: 21%;
+  min-width: 160px;
+  margin: auto;
+}
+section#section_problem .container .problem_heading1 > .imgDiv:after {
+  content: "";
+  position: absolute;
+  width: 68%;
+  height: 2.5px;
+  background-color: #000;
+  top: 134%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+section#section_problem .container .problem_heading1 > .imgDiv img.img-fluid {
+  width: 100%;
+  display: inline-block;
+}
+section#section_problem .container .problem_heading2 {
+  font-size: 2.3rem;
+  font-weight: bold;
+  letter-spacing: 0.4rem;
+  padding: 15px;
+}
+section#section_problem .container ul.problems {
+  padding: 0;
+}
+section#section_problem .container ul.problems li {
+  margin: 6px;
+  list-style: none;
+  letter-spacing: 3px;
+  font-size: 1.2rem;
+}
+section#section_problem .container > .row .col-4.col-md-3 .condition, section#section_problem .container > .row .col-12.col-md-3 .condition {
+  display: inline-block;
+}
+section#section_problem .container > .row .col-4.col-md-3 .condition .imgDiv, section#section_problem .container > .row .col-12.col-md-3 .condition .imgDiv {
   background-color: #fff;
   border-radius: 100%;
   max-width: 205px;
   max-height: 205px;
   margin: auto;
+  margin-top: 25px;
+  margin-bottom: 25px;
 }
-section#section_problem .container > .row .col-4.col-md-3 .imgDiv img, section#section_problem .container > .row .col-12.col-md-3 .imgDiv img {
+section#section_problem .container > .row .col-4.col-md-3 .condition .imgDiv img, section#section_problem .container > .row .col-12.col-md-3 .condition .imgDiv img {
   width: 100%;
+}
+section#section_problem .container > .row .col-4.col-md-3 .condition .imgText, section#section_problem .container > .row .col-12.col-md-3 .condition .imgText {
+  font-size: 1.4rem;
+  background-color: black;
+  border-radius: 8px;
+  color: white;
+  font-weight: 600;
+  margin: auto;
+  letter-spacing: 2.3px;
+  padding: 1.6px;
 }
 
 section#section_feature {
@@ -77,6 +190,7 @@ section#section_feature {
 }
 section#section_feature .imgDiv#cellphonePic {
   width: 35%;
+  z-index: 5;
 }
 section#section_feature .imgDiv#cellphonePic img.cellphoneImg {
   height: 140%;
@@ -127,7 +241,69 @@ section#section_feature .featureDiv .feature_line .feature .imgText {
   }
 }
 section#section_performance {
-  height: 300px;
+  padding-top: 15rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+section#section_performance img.img_wave_top {
+  position: absolute;
+  left: -10px;
+  top: -5px;
+  z-index: -1;
+  height: 11rem;
+}
+section#section_performance img.img_wave_left {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+}
+section#section_performance .performanceDiv1 {
+  width: 80vw;
+  text-align: left;
+}
+section#section_performance .performanceDiv1 .title {
+  font-size: 3.4rem;
+  text-align: left;
+  font-weight: bold;
+}
+section#section_performance .performanceDiv1 .title span {
+  margin-left: 12px;
+  padding: 0;
+  margin-bottom: 0;
+}
+section#section_performance .performanceDiv1 p {
+  text-align: left;
+  letter-spacing: 5px;
+}
+section#section_performance .performanceDiv2 {
+  width: 36vw;
+  text-align: left;
+}
+section#section_performance .performanceDiv2 .subtitle {
+  text-align: left;
+  font-size: 2.3rem;
+}
+section#section_performance .performanceDiv2 img {
+  width: 70%;
+  margin-left: 0;
+}
+section#section_performance .performanceDiv2 p {
+  text-align: left;
+}
+section#section_performance .performanceDiv3 {
+  width: 44vw;
+}
+section#section_performance .performanceDiv3 .p_bigText {
+  text-align: left;
+}
+section#section_performance .performanceDiv3 .subtitle {
+  text-align: right;
+  font-size: 2.3rem;
+}
+section#section_performance .performanceDiv3 img {
+  width: 90%;
 }
 
 /*# sourceMappingURL=all.css.map */

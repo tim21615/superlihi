@@ -1,10 +1,19 @@
 // 針對手機版做調整
 // (max-width: 415px) and (max-height: 1281px)
 
+header#header
+    .container
+        a.tryOutBtn
+            top: 8px
+            &:hover
+                top: 11px
+
 section#section_feature
     .imgDiv#cellphonePic
         order: 2 
-        width: 100%
+        width: 90%
+        margin-top: -130px
+        top: 100px
         img.cellphoneImg 
             position: relative
             margin: auto
@@ -25,3 +34,9 @@ section#section_feature
                     width: 60%
                 .imgText
                      font-size: 1.65rem
+
+
+section#section_performance
+    padding-left: 20px
+    padding-top: 125px
+

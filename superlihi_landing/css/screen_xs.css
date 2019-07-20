@@ -1,3 +1,16 @@
+header#header .container .headingTitle .heading1 img.img-fluid {
+  width: 95%;
+}
+header#header .container .headingTitle .heading2 img.img-fluid {
+  width: 50%;
+}
+header#header .container .headingTitle .heading3 {
+  font-size: 1.7rem;
+}
+header#header .container .headingTitle .heading4 {
+  font-size: 1.35rem;
+}
+
 section#section_feature .imgDiv#cellphonePic img.cellphoneImg {
   width: 100%;
   height: auto;

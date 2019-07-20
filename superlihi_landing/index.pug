@@ -10,8 +10,10 @@ html(lang="en")
 
         link(rel="stylesheet", href="css/all.css")
         link(rel="stylesheet", media="screen and (max-width: 991.9px)", href="css/tablet.css")
-        link(rel="stylesheet", media="screen and (max-width: 768px)", href="css/screen_xs.css")
+        link(rel="stylesheet", media="screen and (max-width: 767.8px)", href="css/screen_xs.css")
         link(rel="stylesheet", media="screen and (max-width: 415px) and (max-height: 1281px)", href="css/mobile.css")
+
+        script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js')
     body
         #nav_head
 
@@ -45,30 +47,35 @@ html(lang="en")
         section#section_problem
             .container
                 .problem_heading1
-                    img.img-fluid(src='img/problem_heading1.png')
+                    .imgDiv
+                        img.img-fluid(src='img/problem_heading1.png')
                 .problem_heading2 電商的痛，我們很懂
 
-                .problems
-                    p.problem1 廣告不知道怎麼優化，要修正圖片還是文案只能猜
-                    p.problem2 找KOL代言導流難以評估量化、業績不知從哪來
-                    p.problem3 a/b測試時間太長，頁面成效不知如何評估才合理
+                ul.problems
+                    li.problem1 廣告不知道怎麼優化，要修正圖片還是文案只能猜
+                    li.problem2 找 KOL 代言導流難以評估量化、業績不知從哪來
+                    li.problem3 a/b測試時間太長，頁面成效不知如何評估才合理
                 .row
-                    .col-4.col-md-3
-                        .imgDiv
-                            img(src="img/problem1.png", alt="")
-                        .imgText 困惑
-                    .col-4.col-md-3
-                        .imgDiv
-                            img(src="img/problem2.png", alt="")
-                        .imgText 假設錯誤
-                    .col-4.col-md-3
-                        .imgDiv
-                            img(src="img/problem3.png", alt="")
-                        .imgText 繼續嘗試
                     .col-12.col-md-3
-                        .imgDiv
-                            img(src="img/problem4.png", alt="")
-                        .imgText 還是失敗
+                        .condition
+                            .imgDiv
+                                img(src="img/problem1.png", alt="")
+                            .imgText 困惑
+                    .col-4.col-md-3
+                        .condition
+                            .imgDiv
+                                img(src="img/problem2.png", alt="")
+                            .imgText 假設錯誤
+                    .col-4.col-md-3
+                        .condition
+                            .imgDiv
+                                img(src="img/problem3.png", alt="")
+                            .imgText 繼續嘗試
+                    .col-4.col-md-3
+                        .condition
+                            .imgDiv
+                                img(src="img/problem4.png", alt="")
+                            .imgText 還是失敗
 
             
 
@@ -156,9 +163,30 @@ html(lang="en")
 
 
         section#section_performance
+            img.img_wave_top(src='img/wave_top.png')
+            img.img_wave_left(src='img/wave_left.png')
+            
+            .performanceDiv1
+                .title
+                    img#imgTarget(src='img/p_title.png')
+                    span#titleTarget 顯著提升
+                p  相較於未使用自訂短網址前的點擊率、在<span class='highlight'>使用了自訂短網址<div class='highlight_bg'></div></span>後點擊率獲得了顯著的成長!連帶著<span class='highlight'><div class='highlight_bg'></div>點擊成本也降低了</span>非常多。
+
+            .performanceDiv2
+                .subtitle ab測試相當容易
+                img(src='img/statistic.png')
+                p 流量會<span class='highlight'><div class='highlight_bg'></div>自動分流</span>、系統更會自動<span class='highlight'><div class='highlight_bg'></div>鎖定瀏覽器</span>，同一瀏覽者只會看到同一頁面!提高測試數據的<span class='highlight'>準確度</span>
+
+            .performanceDiv3
+                .p_bigText 可直接<span class='highlight'><div class='highlight_bg'></div>由後端</span>更換短網址連結，<span class='bold'>不用更改</span>廣告素材文案
+                .subtitle 連結置換隨心所欲
+                img(src='img/wave.png')
+
         section#section_review
         section#section_brand
 
         footer#footer
+
+        script(src='js/all.js')
 
 

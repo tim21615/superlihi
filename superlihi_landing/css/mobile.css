@@ -15,6 +15,10 @@ header#header .container a.tryOutBtn:hover {
   top: 11px;
 }
 
+section#section_problem {
+  padding-left: 0;
+  padding-right: 0;
+}
 section#section_problem .container .problem_heading2 {
   font-size: 20px;
 }
@@ -60,6 +64,40 @@ section#section_performance {
 }
 section#section_performance .performanceDiv2 .subtitle, section#section_performance .performanceDiv2 img {
   left: 0;
+}
+
+section#section_performance {
+  padding-right: 20px;
+  padding-left: 20px;
+}
+section#section_performance img.img_dot {
+  right: 15px;
+}
+section#section_performance .performanceDiv1 .title > img#magnifier_img {
+  left: 90%;
+  bottom: calc(100% - 8rem);
+}
+section#section_performance .performanceDiv2 {
+  text-align: center;
+}
+section#section_performance .performanceDiv2 .subtitle {
+  width: 100%;
+  max-width: none;
+  left: 0;
+}
+section#section_performance .performanceDiv2 img {
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+}
+section#section_performance .performanceDiv2 p {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+section#section_brand .brand_group img.brand {
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 /*# sourceMappingURL=mobile.css.map */

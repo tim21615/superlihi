@@ -150,13 +150,15 @@ header#header
                 left: 3px
                 box-shadow: 2px 2px 5px -1px rgba(0,0,0,0.2)
         img 
-            top: 10px
+            top: 16px
             z-index: 8
             // margin-bottom: -50px
 
 section#section_problem
     background-color: #F4F5F7
     padding: 30px
+    padding-top: 50px
+    padding-bottom: 90px
     box-shadow: 0px 0.5px 12px 3px rgba(black,0.35)
     // box-shadow: 0px 0px 15px -15px rgba(0,0,0,0.4)
     z-index: 6
@@ -187,6 +189,7 @@ section#section_problem
             padding: 15px
         ul.problems
             padding: 0
+            padding-bottom: 5px
             li 
                 margin: 6px
                 list-style: none
@@ -294,7 +297,9 @@ section#section_feature
                 img 
                     // width: 53%
                     width: 68%
+                    border-radius: 10px
                 .imgText
+                    padding-top: 5px
                     color: white
                     font-size: $fz_imgText
                     letter-spacing: 0.3rem
@@ -311,7 +316,14 @@ section#section_performance
     flex-wrap: wrap
     justify-content: center
     padding-left: 60px
+    padding-bottom: 6.5rem
     // padding-right: 60px
+    img.img_dot 
+        display: none
+        position: absolute
+        width: 170px
+        top: 42%
+        right: 40px   
     img.img_wave_top 
         position: absolute
         left: -10px
@@ -320,7 +332,7 @@ section#section_performance
         height: 11rem
     img.img_wave_left 
         position: absolute
-        left: 0
+        left: -5px
         bottom: 0
         z-index: -1
             
@@ -340,8 +352,10 @@ section#section_performance
                 left: 115%
                 bottom: calc(100% - 3.5rem) 
                 z-index: 15
+                // transform: rotate(-10deg)
             >img#imgTarget
                 height: 90%
+                max-height: 60px
                 width: auto
                 margin-right: 12px
             >span
@@ -416,6 +430,7 @@ section#section_review
                 img 
                     padding: 30px 0
                     padding-bottom: 20px
+                    width: 185px
             .col-12.title_words
                 font-size: $fz_subtitle
                 color: white

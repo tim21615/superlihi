@@ -1,3 +1,11 @@
+.color_block1 {
+  left: 0.3rem;
+}
+
+.color_block2 {
+  left: calc(1.7rem + 4px);
+}
+
 section#section_feature .imgDiv#cellphonePic img.cellphoneImg {
   max-height: 115%;
   width: auto;
@@ -5,6 +13,63 @@ section#section_feature .imgDiv#cellphonePic img.cellphoneImg {
 }
 section#section_feature .featureDiv .feature_line .feature img {
   width: 65%;
+}
+
+section#section_performance {
+  padding-right: 60px;
+  padding-top: 170px;
+}
+section#section_performance .performanceDiv1 .title > img#magnifier_img {
+  bottom: calc(100% - 5rem);
+}
+section#section_performance .performanceDiv2 {
+  width: 100%;
+}
+section#section_performance .performanceDiv2 .subtitle {
+  width: 60%;
+  text-align: center;
+  left: -25px;
+  max-width: 270px;
+}
+section#section_performance .performanceDiv2 img {
+  width: 60%;
+  max-width: 270px;
+}
+section#section_performance .performanceDiv2 p {
+  width: 60%;
+  max-width: 400px;
+}
+section#section_performance .performanceDiv3 {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-left: auto;
+  margin-top: 40px;
+}
+section#section_performance .performanceDiv3 .p_bigText, section#section_performance .performanceDiv3 img, section#section_performance .performanceDiv3 .subtitle {
+  width: 100%;
+}
+section#section_performance .performanceDiv3 .p_bigText {
+  order: 2;
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+section#section_performance .performanceDiv3 .subtitle {
+  order: 1;
+  text-align: center;
+}
+section#section_performance .performanceDiv3 img {
+  order: 3;
+  width: 40%;
+  min-width: 200px;
+}
+
+section#section_review .container-fluid .row #first_review {
+  padding-left: 20px;
+}
+section#section_review .container-fluid .row #third_review {
+  padding-right: 20px;
 }
 
 /*# sourceMappingURL=tablet.css.map */

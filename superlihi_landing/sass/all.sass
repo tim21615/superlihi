@@ -5,6 +5,22 @@ $fz_title: 3.4rem
 $fz_innerText: 1.2rem
 $fz_bigInnerText: 1.65rem
 
+.color_block
+    width: 1rem
+    height: 1rem
+    position: absolute
+    bottom: 102%
+    // z-index: 50
+
+.color_block1
+    left: calc(6.95rem + 12px)
+
+    background-color: #7EA5D7
+    
+.color_block2
+    left: calc(8.6rem + 15px)
+    background-color: #5160AB
+
 .subtitle
     font-weight: bold
 span.bold 
@@ -124,10 +140,10 @@ header#header
             font-size: 1.5rem
             // font-weight: bold
             padding: 0.4rem 1.8rem
-            top: 20px
-            letter-spacing: 2px
             text-decoration: none
             box-shadow: 5px 5px 5px -3px rgba(0,0,0,0.5)
+            top: 20px
+            letter-spacing: 2px
             z-index: 12
             &:hover
                 top: 23px
@@ -183,7 +199,8 @@ section#section_problem
             .condition
                 display: inline-block
                 .imgDiv
-                    background-color: #fff
+                    // background-color: #fff
+                    background-color: transparent
                     border-radius: 100%
                     max-width: 205px
                     max-height: 205px
@@ -322,11 +339,13 @@ section#section_performance
                 height: 16rem
                 left: 115%
                 bottom: calc(100% - 3.5rem) 
+                z-index: 15
             >img#imgTarget
                 height: 90%
                 width: auto
+                margin-right: 12px
             >span
-                margin-left: 12px
+                // margin-left: 12px
                 padding: 0
                 margin-bottom: 0
                 // display: inline
@@ -376,6 +395,141 @@ section#section_performance
         img
             width: 90%
             margin-top: 15px
+
+section#section_review
+    background-image: url('../img/review_background.png')
+    background-size: cover
+    background-position: center center
+    padding: 40px
+
+    &:before
+        content: ''
+        width: 100%
+        height: 100%
+        position: absolute
+        background-color: rgba(black,0.3)
+        left: 0
+        top: 0
+    .container-fluid
+        .row
+            .col-12.title
+                img 
+                    padding: 30px 0
+                    padding-bottom: 20px
+            .col-12.title_words
+                font-size: $fz_subtitle
+                color: white
+                letter-spacing: 7px
+                padding-bottom: 25px
+            .col-md-4.col-12
+                padding-left: 20px
+                padding-right: 20px
+                margin-top: 30px
+                >img.headpic 
+                    border-radius: 100%
+                    background-color: #fff
+                    width: 28%
+                    height: auto
+                    position: absolute
+                    left: 50%
+                    bottom: 100%
+                    transform: translate(-50%,50%)
+                .wrapper
+                    
+                    background-color: rgba(black,0.35)
+                    padding-top: 73px
+                    padding-left: 22px
+                    padding-right: 13px
+                    padding-bottom: 40px
+                    // height: 200px
+                    img.triangle 
+                        position: absolute
+                        left: 0
+                        top: 0
+                        // width: 27%
+                        width: 70px
+                    .body
+                        text-align: left
+                        // margin-top: 85px
+                        color: white
+                        
+                        >.body_subject
+                            text-align: left 
+                            font-size: $fz_imgText
+                            padding-top: 10px
+                            padding-bottom: 15px 
+                            font-weight: bold
+                            letter-spacing: 1.5px
+                        >.text
+                            text-align: left
+                            font-size: $fz_innerText
+                            letter-spacing: 3px
+
+
+            #first_review
+                padding-left: 40px
+            #third_review
+                padding-right: 40px
+
+
+section#section_brand
+    background-color: #efefef
+    padding: 50px 70px
+
+
+    
+    h2.title
+        text-align: center
+        color: #555
+        font-weight: bold
+    .brand_group
+        margin-top: 50px
+        // height: 300px
+        img.brand 
+            margin-top: 15px
+            margin-bottom: 15px
+            height: 60px
+            padding-left: 20px
+            padding-right: 20px
+        img.brand.biggest 
+            height: 115px
+        img.brand.small 
+            height: 46px
+        img.brand.big 
+            height: 80px
+        img.brand.bigger
+            height: 90px
+
+footer#footer
+    padding-top: 70px
+    padding-bottom: 70px
+    h1 
+        font-weight: bold
+        letter-spacing: 7px
+
+
+    .text 
+        font-size: 0.8rem
+        letter-spacing: 3px
+        margin-bottom: 50px
+    a.button_sign_up
+        // padding: 6px 15px
+        border-radius: 25px
+        // letter-spacing: 2px
+        color: white
+        font-weight: bold
+        font-size: 1.9rem
+        background-image: linear-gradient(to right, #E39C82, #EA6385)
+        padding: 0.4rem 2.5rem
+        text-decoration: none
+        box-shadow: 5px 5px 5px -3px rgba(0,0,0,0.5)
+
+        &:hover
+            box-shadow: 3px 3px 6px -3px rgba(0,0,0,0.4)
+
+        
+
+            
 
             
             

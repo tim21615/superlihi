@@ -58,5 +58,8 @@ section#section_performance {
   padding-left: 20px;
   padding-top: 125px;
 }
+section#section_performance .performanceDiv2 .subtitle, section#section_performance .performanceDiv2 img {
+  left: 0;
+}
 
 /*# sourceMappingURL=mobile.css.map */

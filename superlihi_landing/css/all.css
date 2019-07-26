@@ -120,6 +120,9 @@ header#header .container .headingTitle .heading3 {
   font-weight: bold;
   margin-top: 2.18rem;
 }
+header#header .container .headingTitle .smallTitle {
+  display: none;
+}
 header#header .container .headingTitle .heading4 {
   margin-top: 5px;
   font-size: 1.2rem;

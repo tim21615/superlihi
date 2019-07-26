@@ -84,7 +84,8 @@ a:hover:not(.navbar-brand) {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 8px 26px;
+  padding: 12px 26px;
+  padding-right: 35px;
 }
 #nav_head > .wrapper nav.navigation ul {
   margin: 0;
@@ -93,7 +94,9 @@ a:hover:not(.navbar-brand) {
   list-style: none;
 }
 #nav_head > .wrapper nav.navigation ul li a.nav-link {
-  border-radius: 15px;
+  font-size: 16px;
+  padding: 0.5rem 2rem;
+  border-radius: 20px;
   color: #fff;
   background-image: linear-gradient(to right, #E39C82, #EA6385);
 }
@@ -227,6 +230,8 @@ section#section_feature {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  padding-top: 25px;
+  padding-bottom: 25px;
 }
 section#section_feature .imgDiv#cellphonePic {
   width: 35%;
@@ -502,7 +507,7 @@ section#section_brand .brand_group img.brand.bigger {
 
 footer#footer {
   padding-top: 70px;
-  padding-bottom: 70px;
+  padding-bottom: 80px;
 }
 footer#footer h1 {
   font-weight: bold;

@@ -4,6 +4,10 @@ header#header .container-fluid .col-md-5 img.header_img {
 header#header .container-fluid .col-md-7 {
   text-align: center;
 }
+header#header .container-fluid .col-md-7 a.tryOutBtn {
+  padding: 0.6rem 2rem;
+  font-size: 1.6rem;
+}
 header#header .container-fluid .headingTitle {
   margin-bottom: 36px;
 }

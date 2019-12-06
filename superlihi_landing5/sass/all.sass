@@ -1,0 +1,583 @@
+$fz_imgText: 1.4rem
+$fz_subtitle: 2.3rem
+$fz_title: 3.4rem
+// $fz_title: 18px
+$fz_innerText: 1.2rem
+$fz_bigInnerText: 1.65rem
+
+.color_block
+    width: 1rem
+    height: 1rem
+    position: absolute
+    bottom: 102%
+    // z-index: 50
+
+.color_block1
+    left: calc(6.95rem + 12px)
+
+    background-color: #7EA5D7
+    
+.color_block2
+    left: calc(8.6rem + 15px)
+    background-color: #5160AB
+
+.subtitle
+    font-weight: bold
+span.bold 
+    font-weight: bold
+
+span.highlight
+    display: inline
+    &:before
+        content: ''
+        position: absolute
+        width: 100%
+        height: 45%
+        bottom: 4px
+        background-image: linear-gradient(to right, #F5DDD2, #F8C9D5)
+        z-index: -1
+
+
+    
+
+// 字體自適應
+html 
+    font-size: 100% !important
+
+@media only screen and (max-width: 1200px)
+    html 
+        font-size: 90% !important
+
+@media only screen and (max-width: 992px)
+    html 
+        font-size: 81% !important
+    
+@media only screen and (max-width: 768px)
+    html 
+        font-size: 72% !important
+    
+// 修正feature5圖片間距
+@media only screen and (max-width: 663.5px)
+    .feature5
+        margin-top: 20px !important
+
+    
+html,body
+    width: 100%
+    padding: 0
+    margin: 0
+    overflow-x: hidden
+
+
+*
+    // border: solid 1px black
+    font-family: 微軟正黑體
+    position: relative
+    text-align: center
+
+a:hover:not(.navbar-brand) 
+    top: 0.7px
+    left: 0.7px
+
+#nav_head
+
+    >.wrapper
+        display: flex
+        flex-direction: row
+        justify-content: space-between
+        align-items: center
+        padding: 12px 26px
+        padding-right: 35px
+        
+        a.navbar-brand
+            // margin-left: 2rem
+        nav.navigation
+            // display: flex
+            // align-items: center
+            ul 
+                margin: 0
+                // height: 100%
+                li
+                    list-style: none
+                    a.nav-link
+                        font-size: 16px
+                        padding: 0.5rem 2rem
+                        border-radius: 20px
+                        color: #fff
+                        background-image: linear-gradient(to right, #E39C82, #EA6385)
+
+
+header#header
+    // background-color: #fefefe
+    
+    .container-fluid
+        padding-bottom: 55px
+        padding-left: 85px
+        padding-right: 85px
+        .col-md-5
+            // vertical-align: middle
+            span.helper 
+                display: inline-block
+                height: 100%
+                vertical-align: middle
+            img 
+                // display: inline-block
+                vertical-align: middle
+        .col-md-7
+            text-align: left
+        .headingTitle
+            margin-top: 10px
+            margin-bottom: 25px
+            .heading
+                text-align: left
+            .heading1
+                padding-top: 1.47rem
+                padding-bottom: 1.47rem
+                // min-width: 470px
+                img.img-fluid
+                    width: 77%
+                    
+            .heading2
+                padding: 0.31rem
+                img.img-fluid
+                    width: 42%
+                    // padding: 20px
+            .heading3 
+                font-size: $fz_bigInnerText
+                letter-spacing: 6px
+                font-weight: bold
+
+                margin-top: 2.18rem
+                // margin-top: 35px
+            .smallTitle
+                display: none
+            .heading4 
+                margin-top: 5px
+                font-size: $fz_innerText
+                letter-spacing: 2.5px
+        a.tryOutBtn
+            border-radius: 6px
+            background-image: linear-gradient(to right, #E3A281, #E9547B)
+            // padding: 5px 9px
+            color: white
+            font-size: 1.5rem
+            // font-weight: bold
+            padding: 0.4rem 1.8rem
+            text-decoration: none
+            box-shadow: 5px 5px 5px -3px rgba(0,0,0,0.5)
+            // top: 10px
+            letter-spacing: 2px
+            z-index: 12
+            text-align: left
+            width: 100%
+            margin-left: 0
+            &:hover
+                // top: 11px
+                // left: 3px
+                box-shadow: 2px 2px 5px -1px rgba(0,0,0,0.2)
+        img 
+            top: 16px
+            z-index: 8
+            // margin-bottom: -50px
+
+section#section_problem
+    background-color: #F4F5F7
+    padding: 30px
+    padding-top: 50px
+    padding-bottom: 90px
+    box-shadow: 0px 0.5px 12px 3px rgba(black,0.35)
+    // box-shadow: 0px 0px 15px -15px rgba(0,0,0,0.4)
+    z-index: 6
+    .container
+        .problem_heading1
+            padding: 20px
+            >.imgDiv
+                width: 21%
+                min-width: 160px
+                margin: auto
+                &:after
+                    content: ''
+                    position: absolute
+                    width: 68%
+                    height: 2.5px
+                    background-color: #000
+                    top: 134%
+                    left: 50%
+                    transform: translateX(-50%)
+                img.img-fluid
+                    width: 100%
+                    display: inline-block
+                    
+        .problem_heading2
+            font-size: $fz_subtitle
+            font-weight: bold
+            letter-spacing: 0.4rem
+            padding: 15px
+        ul.problems
+            padding: 0
+            padding-bottom: 5px
+            li 
+                margin: 6px
+                list-style: none
+                letter-spacing: 3px
+                font-size: $fz_innerText
+
+    .container>.row
+        .col-4.col-md-3,.col-12.col-md-3
+            // margin: auto
+            .condition
+                display: inline-block
+                .imgDiv
+                    // background-color: #fff
+                    background-color: transparent
+                    border-radius: 100%
+                    max-width: 205px
+                    max-height: 205px
+                    margin: auto
+                    margin-top: 25px
+                    margin-bottom: 25px
+                    // padding: 0
+                    img 
+                        width: 100%
+                        
+                        // margin: 0
+                .imgText
+                    font-size: $fz_imgText
+                    background-color: black
+                    border-radius: 8px
+                    color: white
+                    font-weight: 600
+                    margin: auto
+                    // margin-right: 5px
+                    // margin-left: 5px
+                    letter-spacing: 2.3px
+                    padding: 1.6px
+                    
+
+// section#section_feature
+//     
+    // .col-5
+    //     position: relative
+    //     >img.cellphoneImg
+    //         position: absolute
+    //         left: 0
+    //         width: 28vw
+    // .col-7
+    //     // right: 15px
+    //     >.row
+    //         .feature_imgDiv
+    //             margin-left: auto
+    //             margin-right: auto
+    //             width: 110px
+    //             img 
+    //                 width: 100%
+    //             .imgText
+    //                 color: white
+            
+
+
+        // .wrapper_feature
+        //     display: flex
+        //     flex-direction: row
+        //     justify-content: center
+
+section#section_feature
+    background-image: linear-gradient(to right, #E39F82, #E9587C)
+    display: flex
+    flex-direction: row
+    flex-wrap: wrap
+    padding-top: 25px
+    padding-bottom: 25px
+    .imgDiv#cellphonePic
+        width: 35%
+        z-index: 5
+        img.cellphoneImg 
+            // width: 85%
+            height: 140%
+            position: absolute
+            right: 0
+            bottom: -270px
+            bottom: -14rem
+    .featureDiv
+        width: 64%
+        .featureTitle
+            padding-top: 30px
+            padding-bottom: 30px
+            img
+                width: 25%
+                min-width: 160px
+                
+        .feature_line#firstLine
+            padding-top: 20px
+            padding-bottom: 20px
+        .feature_line#secondLine
+            padding-bottom: 50px
+        .feature_line
+            display: flex
+            flex-wrap: wrap
+            justify-content: center
+            .feature
+                // width: 26%
+                width: 23%
+                min-width: 138px
+                // margin-top: 50px
+                
+                img 
+                    // width: 53%
+                    width: 68%
+                    border-radius: 10px
+                .imgText
+                    padding-top: 5px
+                    color: white
+                    font-size: $fz_imgText
+                    letter-spacing: 0.3rem
+
+@media only screen and (max-width: 681px)
+    section#section_feature .imgDiv#cellphonePic img.cellphoneImg
+        right: -17px
+
+
+section#section_performance
+    // height: 300px
+    padding-top: 15rem
+    display: flex
+    flex-wrap: wrap
+    justify-content: center
+    padding-left: 60px
+    padding-bottom: 6.5rem
+    // padding-right: 60px
+    img.img_dot 
+        display: none
+        position: absolute
+        width: 170px
+        top: 42%
+        right: 40px   
+    img.img_wave_top 
+        position: absolute
+        left: -10px
+        top: -5px
+        z-index: -1
+        height: 11rem
+    img.img_wave_left 
+        position: absolute
+        left: -5px
+        bottom: 0
+        z-index: -1
+            
+    .performanceDiv1
+        width: 75%
+        text-align: left
+        margin-bottom: 15px
+        
+        .title
+            font-size: $fz_title
+            text-align: left
+            font-weight: bold
+            display: inline-block
+            >img#magnifier_img
+                position: absolute
+                height: 16rem
+                left: 115%
+                bottom: calc(100% - 3.5rem) 
+                z-index: 15
+                // transform: rotate(-10deg)
+            >img#imgTarget
+                height: 90%
+                max-height: 60px
+                width: auto
+                margin-right: 12px
+            >span
+                // margin-left: 12px
+                padding: 0
+                margin-bottom: 0
+                // display: inline
+        p
+            margin-top: 12px
+            text-align: left
+            letter-spacing: 5px
+            font-size: $fz_innerText
+            line-height: 35px
+            margin-bottom: 23px
+
+    .performanceDiv2
+        width: 32%
+        text-align: left
+        .subtitle 
+            text-align: left
+            // padding: 10px
+            padding-bottom: 10px
+            padding-top: 10px
+            font-size: $fz_subtitle
+            
+        img
+            width: 70%
+            margin-left: auto
+            margin-right: 0
+            left: -25px
+        p 
+            text-align: left
+            font-size: $fz_innerText
+            width: 70%
+            line-height: 2.2rem
+            letter-spacing: 3px
+            margin-top: 10px
+
+    .performanceDiv3
+        width: 43%
+        text-align: right
+        .p_bigText
+            text-align: left
+            font-size: $fz_bigInnerText
+            letter-spacing: 3px
+            margin-top: 25px
+            margin-bottom: 30px
+        .subtitle
+            text-align: right
+            font-size: $fz_subtitle
+        img
+            width: 90%
+            margin-top: 15px
+
+section#section_review
+    background-image: url('../img/review_background.png')
+    background-size: cover
+    background-position: center center
+    padding: 40px
+
+    &:before
+        content: ''
+        width: 100%
+        height: 100%
+        position: absolute
+        background-color: rgba(black,0.3)
+        left: 0
+        top: 0
+    .container-fluid
+        .row
+            .col-12.title
+                img 
+                    padding: 30px 0
+                    padding-bottom: 20px
+                    width: 185px
+            .col-12.title_words
+                font-size: $fz_subtitle
+                color: white
+                letter-spacing: 7px
+                padding-bottom: 25px
+            .col-md-4.col-12
+                padding-left: 20px
+                padding-right: 20px
+                margin-top: 30px
+                >img.headpic 
+                    border-radius: 100%
+                    background-color: #fff
+                    width: 28%
+                    height: auto
+                    position: absolute
+                    left: 50%
+                    bottom: 100%
+                    transform: translate(-50%,50%)
+                .wrapper
+                    
+                    background-color: rgba(black,0.35)
+                    padding-top: 73px
+                    padding-left: 22px
+                    padding-right: 13px
+                    padding-bottom: 40px
+                    // height: 200px
+                    img.triangle 
+                        position: absolute
+                        left: 0
+                        top: 0
+                        // width: 27%
+                        width: 70px
+                    .body
+                        text-align: left
+                        // margin-top: 85px
+                        color: white
+                        
+                        >.body_subject
+                            text-align: left 
+                            font-size: $fz_imgText
+                            padding-top: 10px
+                            padding-bottom: 15px 
+                            font-weight: bold
+                            letter-spacing: 1.5px
+                        >.text
+                            text-align: left
+                            font-size: $fz_innerText
+                            letter-spacing: 3px
+
+
+            #first_review
+                padding-left: 40px
+            #third_review
+                padding-right: 40px
+
+
+section#section_brand
+    background-color: #efefef
+    padding: 50px 70px
+
+
+    
+    h2.title
+        text-align: center
+        color: #555
+        font-weight: bold
+    .brand_group
+        margin-top: 50px
+        // height: 300px
+        img.brand 
+            margin-top: 15px
+            margin-bottom: 15px
+            height: 60px
+            padding-left: 20px
+            padding-right: 20px
+        img.brand.biggest 
+            height: 115px
+        img.brand.small 
+            height: 46px
+        img.brand.big 
+            height: 80px
+        img.brand.bigger
+            height: 90px
+
+footer#footer
+    padding-top: 70px
+    padding-bottom: 80px
+    h1 
+        font-weight: bold
+        letter-spacing: 7px
+
+
+    .text 
+        font-size: 0.8rem
+        letter-spacing: 3px
+        margin-bottom: 50px
+    a.button_sign_up
+        // padding: 6px 15px
+        border-radius: 25px
+        // letter-spacing: 2px
+        color: white
+        font-weight: bold
+        font-size: 1.9rem
+        background-image: linear-gradient(to right, #E39C82, #EA6385)
+        padding: 0.4rem 2.5rem
+        text-decoration: none
+        box-shadow: 5px 5px 5px -3px rgba(0,0,0,0.5)
+
+        &:hover
+            box-shadow: 3px 3px 6px -3px rgba(0,0,0,0.4)
+
+
+
+        
+
+            
+
+            
+            
+
+
+

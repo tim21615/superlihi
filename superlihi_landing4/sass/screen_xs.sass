@@ -1,0 +1,56 @@
+$fz_bigInnerText: 1.7rem
+$fz_innerText: 1.35rem
+
+header#header
+    // background-color: #fefefe
+    
+    .container
+        .col-md-8
+            text-align: center
+        .headingTitle
+            .heading1
+                img.img-fluid
+                    width: 95%
+            .heading2
+                img.img-fluid
+                    width: 50%
+            .heading3 
+                font-size: $fz_bigInnerText
+                margin-left: 3px
+
+            .heading4 
+                font-size: $fz_innerText
+                margin-left: 3px
+
+    
+section#section_feature
+    .imgDiv#cellphonePic
+        img.cellphoneImg
+            width: 100%
+            height: auto
+    .featureDiv
+        .feature_line
+            .feature
+                width: 32%
+section#section_performance 
+    .performanceDiv1
+        p
+            font-size: $fz_innerText
+    .performanceDiv2
+        p 
+            font-size: $fz_innerText
+    .performanceDiv3
+        .p_bigText
+            font-size: $fz_bigInnerText
+
+section#section_brand
+    padding-left: 20px
+    padding-right: 20px
+
+
+
+
+@media only screen and (max-width: 681px)
+    section#section_feature .imgDiv#cellphonePic img.cellphoneImg
+        right: -17px
+

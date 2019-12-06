@@ -1,6 +1,12 @@
 header#header .container .col-md-8 {
   text-align: center;
 }
+header#header .container .headingTitle {
+  margin-bottom: 36px;
+}
+header#header .container .headingTitle .heading1 {
+  margin-bottom: 16px;
+}
 header#header .container .headingTitle .heading1 img.img-fluid {
   width: 95%;
 }

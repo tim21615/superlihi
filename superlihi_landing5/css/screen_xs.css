@@ -16,6 +16,7 @@ header#header .container-fluid .headingTitle .heading2 img.img-fluid {
 header#header .container-fluid .headingTitle .heading3 {
   font-size: 1.7rem;
   margin-left: 3px;
+  margin-bottom: 12px;
 }
 header#header .container-fluid .headingTitle .heading4 {
   font-size: 1.35rem;
